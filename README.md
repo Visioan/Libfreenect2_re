@@ -6,6 +6,7 @@
 
 #增加 apply640_480() //不使用深度滤波，输出为[640_480]大小的深度图和彩色图
 
+#官方GitHub https://github.com/OpenKinect/libfreenect2
 
 # libfreenect2
 
