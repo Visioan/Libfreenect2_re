@@ -623,7 +623,7 @@ void RegistrationImpl::apply512_363(const Frame *rgb, const Frame *depth, Frame 
 		// run through all registered color pixels and set them based on c_off
 		map_c_off = map_c_off + 26 * 512;
 		depth_data = depth_data + 26 * 512;
-		for (int i = 26 * 512; i < 389 * 512; ++i, ++map_c_off, ++registered_data, ++depth_data){
+		for (int i = 26 * 512; i < 389 * 512; ++i, ++map_c_off, ++registered_data, ++undistorted_data,++depth_data){
 			const int c_off = *map_c_off;
 
 			// check if offset is out of image
